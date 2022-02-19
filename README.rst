@@ -4,8 +4,8 @@ Materia Utils Module
 
 .. begin-description
 
-.. image:: https://codecov.io/gh/kijanac/materia-utils/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/kijanac/materia-utils
+.. image:: https://codecov.io/gh/kijanac/materia-utils/branch/main/graph/badge.svg?token=FQSTFFD04L
+    :target: https://codecov.io/gh/kijanac/materia-utils
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github
