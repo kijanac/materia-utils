@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "materia-utils"
-version = "0.1.0"
+version = "1.0.0"
 description = "Utilities for atomistic simulations of materials through Materia."
 authors = ["Ki-Jana Carter <kijana@mit.edu>"]
 license = "MIT"
