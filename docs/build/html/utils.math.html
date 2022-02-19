@@ -1,0 +1,547 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>utils.math module &mdash; materia-utils 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="utils.utils module" href="utils.utils.html" />
+    <link rel="prev" title="utils package" href="utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> materia-utils
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="utils.html">utils package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="utils.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">utils.math module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utils.utils.html">utils.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#module-utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">materia-utils</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">utils</a> &raquo;</li>
+        
+          <li><a href="utils.html">utils package</a> &raquo;</li>
+        
+      <li>utils.math module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/utils.math.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-utils.math">
+<span id="utils-math-module"></span><h1>utils.math module<a class="headerlink" href="#module-utils.math" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.divisors">
+<span class="sig-name descname"><span class="pre">divisors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#divisors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.divisors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all positive integer divisors of a given positive integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – Number whose divisors are to be found.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of divisors of <span class="math notranslate nohighlight">\(n\)</span>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.lcm">
+<span class="sig-name descname"><span class="pre">lcm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numbers</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#lcm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.lcm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find least common multiple of a list of integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>numbers</strong> (<em>Iterable</em><em>[</em><em>int</em><em>]</em>) – Integers whose least common multiple is to be found</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Least common multiple</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.linearly_independent">
+<span class="sig-name descname"><span class="pre">linearly_independent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vectors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#linearly_independent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.linearly_independent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select a linearly independent subset of vectors from the given set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vectors</strong> (<em>np.ndarray</em>) – Array of <span class="math notranslate nohighlight">\(N\)</span> <span class="math notranslate nohighlight">\(k\)</span>-dimensional candidate vectors.
+Shape: <span class="math notranslate nohighlight">\((k,N)\)</span></p></li>
+<li><p><strong>indep</strong> (<em>Optional</em><em>[</em><em>np.ndarray</em><em>]</em><em>, </em><em>optional</em>) – Array of <span class="math notranslate nohighlight">\(M\)</span> known linearly independent <span class="math notranslate nohighlight">\(k\)</span>-dimensional vectors.
+By default None.
+Shape: <span class="math notranslate nohighlight">\((k,M)\)</span></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Linearly independent subset of vectors</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.nearest_points">
+<span class="sig-name descname"><span class="pre">nearest_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#nearest_points"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.nearest_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the nearest points from a given list of points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>numpy.ndarray</em>) – Array of <span class="math notranslate nohighlight">\(n\)</span> points in <span class="math notranslate nohighlight">\(d\)</span>-dimensional space.
+Shape: <span class="math notranslate nohighlight">\((d,n)\)</span></p></li>
+<li><p><strong>m</strong> (<em>int</em>) – number of nearest points to find</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array of the <span class="math notranslate nohighlight">\(m\)</span> nearest points from the given list of points.
+Shape: <span class="math notranslate nohighlight">\((d,m)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.nontrivial_vector">
+<span class="sig-name descname"><span class="pre">nontrivial_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">R</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#nontrivial_vector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.nontrivial_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a random vector acted upon nontrivially
+(i.e. is sent to a linearly independent vector)
+by the given rotation matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>R</strong> (<em>numpy.ndarray</em>) – Array representing a rotation matrix.
+Shape: <span class="math notranslate nohighlight">\((3,3)\)</span></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array representing a vector which is acted upon nontrivially by R.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.normalize">
+<span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#normalize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize a vector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>v</strong> (<em>numpy.ndarray</em>) – Vector to be normalized.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Normalized vector.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.orthogonal_decomp">
+<span class="sig-name descname"><span class="pre">orthogonal_decomp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#orthogonal_decomp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.orthogonal_decomp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decompose a vector into a projection and the orthogonal complement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> (<em>numpy.ndarray</em>) – Array to be decomposed.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>u</strong> (<em>numpy.ndarray</em>) – Array defining the subspace decomposition.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><em>numpy.ndarray</em> – Projection of <span class="math notranslate nohighlight">\(v\)</span> along <span class="math notranslate nohighlight">\(u\)</span>.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><em>numpy.ndarray</em> – Orthogonal complement of <span class="math notranslate nohighlight">\(v\)</span> relative to <span class="math notranslate nohighlight">\(u\)</span>.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.periodicity">
+<span class="sig-name descname"><span class="pre">periodicity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#periodicity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.periodicity" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.perpendicular_vector">
+<span class="sig-name descname"><span class="pre">perpendicular_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#perpendicular_vector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.perpendicular_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a unit vector which is perpendicular to
+one or two given nonzero vector(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>numpy.ndarray</em>) – Array representing a nonzero vector.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>b</strong> (<em>numpy.ndarray</em>) – Array representing a nonzero vector.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array representing a unit vector which
+is perpendicular to a (and b, if applicable).
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.reflection_matrix">
+<span class="sig-name descname"><span class="pre">reflection_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#reflection_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.reflection_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a reflection matrix given a normal vector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>normal</strong> (<em>numpy.ndarray</em>) – Array normal to the reflection plane.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Reflection matrix.
+Shape: <span class="math notranslate nohighlight">\((3,3)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.rotation_matrix">
+<span class="sig-name descname"><span class="pre">rotation_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">improper</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#rotation_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a rotation matrix given an axis and angle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>axis</strong> (<em>numpy.ndarray</em>) – Axis of rotation.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>theta</strong> (<em>float</em>) – Angle of rotation (in radians) about the axis of rotation.</p></li>
+<li><p><strong>m</strong> (<em>numpy.ndarray</em>) – The vector to be rotated.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>n</strong> (<em>numpy.ndarray</em>) – The vector after rotation, i.e. the target vector.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>improper</strong> (<em>bool</em>) – If true, return an improper rotation.
+By default False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Rotation matrix.
+Shape: <span class="math notranslate nohighlight">\((3,3)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.sample_spherical_lune">
+<span class="sig-name descname"><span class="pre">sample_spherical_lune</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#sample_spherical_lune"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.sample_spherical_lune" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample point on unit sphere from within lune defined by two plane normals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n1</strong> (<em>np.ndarray</em>) – First plane normal.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>n2</strong> (<em>np.ndarray</em>) – Second plane normal.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sampled point.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.sample_spherical_triangle">
+<span class="sig-name descname"><span class="pre">sample_spherical_triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_beta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_gamma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#sample_spherical_triangle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.sample_spherical_triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sample point from spherical triangle defined by vertices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> (<em>np.ndarray</em>) – First vertex coordinates.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>B</strong> (<em>np.ndarray</em>) – Second vertex coordinates.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>C</strong> (<em>np.ndarray</em>) – Third vertex coordinates.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p></li>
+<li><p><strong>sin_alpha</strong> (<em>float</em>) – Sine of angle at vertex <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p><strong>sin_beta</strong> (<em>float</em>) – Sine of angle at vertex <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p><strong>sin_gamma</strong> (<em>float</em>) – Sine of angle at vertex <span class="math notranslate nohighlight">\(C\)</span>.</p></li>
+<li><p><strong>seed</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Random seed.
+By default None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Sampled point.
+Shape: <span class="math notranslate nohighlight">\((3,1)\)</span></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.spherical_excess">
+<span class="sig-name descname"><span class="pre">spherical_excess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cos_alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cos_beta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cos_gamma</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#spherical_excess"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.spherical_excess" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.math.tetrahedron_volume">
+<span class="sig-name descname"><span class="pre">tetrahedron_volume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertices</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/math.html#tetrahedron_volume"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#utils.math.tetrahedron_volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate volume of a tetrahedron given its vertices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vertices</strong> (<em>numpy.ndarray</em>) – Vertex coordinates.
+Shape: <span class="math notranslate nohighlight">\((3,4)\)</span></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Volume of tetrahedron</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="utils.utils.html" class="btn btn-neutral float-right" title="utils.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="utils.html" class="btn btn-neutral float-left" title="utils package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
