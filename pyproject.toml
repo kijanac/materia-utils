@@ -5,8 +5,8 @@ description = "Utilities for atomistic simulations of materials through Materia.
 authors = ["Ki-Jana Carter <kijana@mit.edu>"]
 license = "MIT"
 readme = "README.rst"
-repository = "https://github.com/kijanac/luz"
-homepage = "https://github.com/kijanac/luz"
+repository = "https://github.com/kijanac/materia-utils"
+homepage = "https://github.com/kijanac/materia-utils"
 packages = [
     { include = "materia", from = "src" },
 ]
